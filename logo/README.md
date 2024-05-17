@@ -65,11 +65,11 @@ end
 to tree2 :x :n
   if :n = 0 [ stop ]
   lt 30 fd :x
-  tree :x :n-1
+  tree2 :x :n-1
   pu bk :x pd
-  rt 60 fd :x/2
-  tree :x :n-1
-  pu bk :x/2 pd lt 30
+  rt 60 fd :x
+  tree2 :x/2 :n-1
+  pu bk :x pd lt 30
 end
 ```
 
